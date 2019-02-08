@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- General app information -->
+    <string name="app_name">퍼센트 계산기</string>
+    <string name="app_info">퍼센트를 계산하는 어플</string>
+
+    <!-- Main screen -->
+    <string name="first_number">분자</string>
+    <string name="second_number">분모</string>
+    <string name="switch_percent_mode">퍼센트 모드로 바꾸기</string>
+
+    <!-- Errors -->
+    <string name="error_invalid_number">잘못된 숫자</string>
+    <string name="error_calculation_fail">계산에 실패하였습니다.</string>
+
+    <!-- Percent Calculation Mode -->
+    <string name="title_activity_percent_mode">퍼센트 계산 모드</string>
+    <string name="second_number_percent_mode">퍼센트</string>
+
+    <!-- Action bar items -->
+    <string name="action_settings">설정</string>
+    <string name="action_about">정보</string>
+</resources>

@@ -1,0 +1,24 @@
+<resources>
+    <!-- General app information -->
+    <string name="app_name">Percentage Calculator</string>
+    <string name="app_info">App to calculate percentages</string>
+
+    <!-- Main screen -->
+    <string name="first_number">Nominator</string>
+    <string name="second_number">Denominator</string>
+    <string name="switch_percent_mode">Switch to Percent Mode</string>
+
+    <!-- Errors -->
+    <string name="error_invalid_number">Invalid number.</string>
+    <string name="error_calculation_fail">Failed calculation.</string>
+
+    <!-- Percent Calculation Mode -->
+    <string name="title_activity_percent_mode">Percent Calculation Mode</string>
+    <string name="second_number_percent_mode">Percentage</string>
+
+    <!-- Action bar items -->
+    <string name="action_settings">Settings</string>
+    <string name="action_about">About</string>
+
+
+</resources>

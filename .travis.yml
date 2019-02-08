@@ -1,0 +1,42 @@
+language: android
+
+jdk:
+  oraclejdk8
+
+env:
+  global:
+    - ANDROID_SDK_VERSION="r27.0.1"
+    - BUILD_TOOLS="27.0.1"
+    - TARGET_API="27"
+
+android:
+  components:
+    - tools
+    - platform-tools-${TARGET_API}
+    - build-tools-${BUILD_TOOLS}  # specify build tools version as they might not be pre-installed
+    - android-${TARGET_API}  # The SDK version used to compile
+    - extra
+
+  licenses:
+    - 'android-sdk-license-.+'
+    - 'android-sdk-preview-license-.+'
+    - 'google-gdk-license-.+'
+
+before_install:
+  # gradle executable
+  - chmod +x gradlew
+  
+  # environment info
+  - uname -a
+
+  # for gradle output style
+  - export TERM=dumb
+
+# Build attempt!
+install:
+
+  ./gradlew clean build
+
+# And we now check!
+script:
+  ./gradlew check
